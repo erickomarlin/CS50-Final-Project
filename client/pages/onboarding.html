@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding — Daily Calorie Buddy</title>
+    <link href="/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-brand min-h-screen flex items-center justify-center p-4">
+    <div class="bg-surface border border-line rounded-2xl p-5 w-full max-w-sm">
+      <div id="progressBar" class="flex gap-1 mb-4"></div>
+
+      <p id="stepLabel" class="text-xs text-gray-500 mb-1"></p>
+      <h1 id="questionTitle" class="text-white text-lg font-medium mb-4"></h1>
+
+      <div id="optionsContainer" class="flex flex-col gap-2 mb-5"></div>
+
+      <p id="errorMsg" class="text-excess text-xs mb-3 hidden"></p>
+
+      <div class="flex gap-2">
+        <button
+          id="backBtn"
+          class="flex-1 border border-line text-white rounded-lg py-2 text-sm"
+        >
+          Back
+        </button>
+        <button
+          id="nextBtn"
+          class="flex-2 bg-gold text-brand rounded-lg py-2 text-sm font-medium"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/onboarding.js"></script>
+  </body>
+</html>

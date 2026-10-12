@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result — Daily Calorie Buddy</title>
+    <link href="/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-brand min-h-screen flex items-center justify-center p-4">
+    <div class="bg-surface border border-line rounded-2xl p-5 w-full max-w-sm">
+      <h1 class="text-white text-lg font-medium mb-4">Result</h1>
+
+      <div class="flex gap-1 mb-4">
+        <button
+          data-level="light"
+          class="level-btn flex-1 text-xs py-2 rounded-lg border border-line text-gray-400"
+        >
+          Total
+        </button>
+        <button
+          data-level="balance"
+          class="level-btn flex-1 text-xs py-2 rounded-lg border border-line text-gray-400"
+        >
+          Burn All Calorie
+        </button>
+        <button
+          data-level="determined"
+          class="level-btn flex-1 text-xs py-2 rounded-lg border border-line text-gray-400"
+        >
+          Lose Weight !!
+        </button>
+      </div>
+
+      <div class="bg-brand border border-line rounded-xl p-4 text-center mb-4">
+        <p class="text-xs text-gray-500 mb-1">Today's balance</p>
+        <p id="netCalorieEl" class="text-2xl font-medium"></p>
+      </div>
+
+      <div id="activitiesSection" class="mb-4 hidden">
+        <p class="text-gold text-sm font-medium mb-2">Suggested activities</p>
+        <div id="activitiesList" class="flex flex-col gap-2"></div>
+      </div>
+
+      <div id="nutrientsSection" class="mb-4 hidden">
+        <p class="text-gold text-sm font-medium mb-2">Recommended nutrients</p>
+        <div id="nutrientsList" class="flex flex-col gap-2"></div>
+      </div>
+
+      <div id="mealPlanSection" class="mb-4 hidden">
+        <p class="text-gold text-sm font-medium mb-2">Tomorrow's food plan</p>
+        <div id="mealPlanList" class="flex flex-col gap-2"></div>
+      </div>
+
+      <button
+        id="submitAnotherBtn"
+        type="button"
+        class="w-full bg-gold text-brand rounded-lg py-2 text-sm font-medium mb-2"
+      >
+        Submit another
+      </button>
+
+      <button
+        id="backBtn"
+        type="button"
+        class="w-full border border-line text-white rounded-lg py-2 text-sm"
+      >
+        Back
+      </button>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/result.js"></script>
+  </body>
+</html>

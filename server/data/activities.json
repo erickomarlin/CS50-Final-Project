@@ -1,0 +1,13 @@
+[
+  { "name": "Wash Dish", "calPerMinute": 2.4 },
+  { "name": "Wash Car", "calPerMinute": 3.7 },
+  { "name": "Wash Clothes", "calPerMinute": 2.4 },
+  { "name": "Study", "calPerMinute": 1.37 },
+  { "name": "Read", "calPerMinute": 1.37 },
+  { "name": "Make Up Room", "calPerMinute": 2.6 },
+  { "name": "Clean The Floor", "calPerMinute": 3.5 },
+  { "name": "Play Video Games", "calPerMinute": 1.6 },
+  { "name": "Plank", "calPerMinute": 4 },
+  { "name": "Sing", "calPerMinute": 2.1 },
+  { "name": "Walk", "calPerMinute": 4 }
+]

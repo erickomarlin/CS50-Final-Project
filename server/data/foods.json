@@ -1,0 +1,6 @@
+[
+  { "name": "Rice", "category": "carbo", "calPerGram": 1.3 },
+  { "name": "Bread", "category": "carbo", "calPerGram": 3.0 },
+  { "name": "Chicken breast", "category": "protein", "calPerGram": 1.65 },
+  { "name": "Egg", "category": "protein", "calPerGram": 1.55 }
+]

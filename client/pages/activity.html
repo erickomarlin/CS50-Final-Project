@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity — Daily Calorie Buddy</title>
+    <link href="../css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-brand min-h-screen flex items-center justify-center p-4">
+    <div class="bg-surface border border-line rounded-2xl p-5 w-full max-w-sm">
+      <h1 class="text-white text-lg font-medium mb-1">Today's activity</h1>
+      <p class="text-gray-500 text-xs mb-4">Add the activities you did today</p>
+
+      <div id="activityListEl" class="flex flex-col gap-2 mb-2"></div>
+
+      <div class="flex gap-2 mb-2">
+        <input
+          id="activityName"
+          type="text"
+          placeholder="e.g. Walking"
+          class="flex-2 min-w-0 bg-brand border border-line text-white rounded-lg px-3 py-2 text-sm"
+        />
+        <input
+          id="activityMinutes"
+          type="number"
+          placeholder="min"
+          class="flex-1 min-w-0 bg-brand border border-line text-white rounded-lg px-3 py-2 text-sm"
+        />
+      </div>
+      <button
+        id="addActivity"
+        type="button"
+        class="w-full border border-gold text-gold rounded-lg py-2 text-sm mb-5"
+      >
+        + Add activity
+      </button>
+
+      <p id="errorMsg" class="text-excess text-xs mb-3 hidden"></p>
+
+      <button
+        id="submitBtn"
+        type="button"
+        class="w-full bg-gold text-brand rounded-lg py-2 text-sm font-medium mb-2"
+      >
+        Submit
+      </button>
+      <button
+        id="backBtn"
+        type="button"
+        class="w-full border border-line text-white rounded-lg py-2 text-sm"
+      >
+        Back
+      </button>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/activity.js"></script>
+  </body>
+</html>

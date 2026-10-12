@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In — Daily Calorie Buddy</title>
+    <link href="/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-brand min-h-screen flex items-center justify-center p-4">
+    <div class="bg-surface border border-line rounded-2xl p-6 w-full max-w-sm">
+      <h1 class="text-gold text-xl font-medium mb-4">Log in</h1>
+
+      <form id="loginForm" class="flex flex-col gap-3">
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          required
+          class="bg-brand border border-line text-white rounded-lg px-3 py-2 text-sm"
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+          class="bg-brand border border-line text-white rounded-lg px-3 py-2 text-sm"
+        />
+
+        <p id="errorMsg" class="text-excess text-xs hidden"></p>
+
+        <button
+          type="submit"
+          class="bg-gold text-brand rounded-lg px-4 py-2 font-medium text-sm mt-2"
+        >
+          Log in
+        </button>
+      </form>
+
+      <p class="text-gray-400 text-xs mt-4 text-center">
+        No account yet?
+        <a href="/pages/signup.html" class="text-gold">Sign up</a>
+      </p>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/login.js"></script>
+  </body>
+</html>
